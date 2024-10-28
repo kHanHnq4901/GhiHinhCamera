@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppTheoDoiCamera")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e22477b0ab3f7c4646369434da0fa0aec8fe77")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppTheoDoiCamera")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppTheoDoiCamera")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

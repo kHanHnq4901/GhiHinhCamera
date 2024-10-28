@@ -1,20 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GhiHinhCamera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|d:\\projectgsmba\\apptheodoicamera\\apptheodoicamera\\ghihinhcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\ghihinhcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|c:\\users\\user\\documents\\ghihinhcamera\\apptheodoicamera\\ghihinhcamera.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\ghihinhcamera.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|d:\\projectgsmba\\apptheodoicamera\\apptheodoicamera\\apptheodoicamera.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\apptheodoicamera.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|C:\\Users\\User\\Documents\\GhiHinhCamera\\apptheodoicamera\\ghihinhcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\ghihinhcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|c:\\users\\user\\documents\\ghihinhcamera\\apptheodoicamera\\ghihinhcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\ghihinhcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\7.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|D:\\ProjectGSMBA\\AppTheoDoiCamera\\apptheodoicamera\\ghihinhcamera.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|c:\\users\\user\\documents\\ghihinhcamera\\apptheodoicamera\\apptheodoicamera.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\apptheodoicamera.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|C:\\Users\\User\\Documents\\GhiHinhCamera\\apptheodoicamera\\ghihinhcamera.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{6242C3C4-D577-463A-96CC-50C3D0C487BC}|AppTheoDoiCamera\\AppTheoDoiCamera.csproj|solutionrelative:apptheodoicamera\\ghihinhcamera.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
@@ -29,52 +37,103 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GhiHinhCamera.cs",
-              "DocumentMoniker": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\AppTheoDoiCamera\\GhiHinhCamera.cs",
+              "Title": "GhiHinhCamera.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.Designer.cs",
+              "RelativeDocumentMoniker": "AppTheoDoiCamera\\GhiHinhCamera.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.Designer.cs",
+              "RelativeToolTip": "AppTheoDoiCamera\\GhiHinhCamera.Designer.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAmwJAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T02:57:21.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GhiHinhCamera.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.cs",
               "RelativeDocumentMoniker": "AppTheoDoiCamera\\GhiHinhCamera.cs",
-              "ToolTip": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\AppTheoDoiCamera\\GhiHinhCamera.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.cs [Design]",
+              "RelativeToolTip": "AppTheoDoiCamera\\GhiHinhCamera.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T02:31:39.02Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GhiHinhCamera.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.cs",
+              "RelativeDocumentMoniker": "AppTheoDoiCamera\\GhiHinhCamera.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.cs",
               "RelativeToolTip": "AppTheoDoiCamera\\GhiHinhCamera.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAwwPEAAAAXAAAAAAAAAA==",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAowBYBAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T04:12:27.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Microsoft.NET.TargetFrameworkInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\7.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\7.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-10-25T09:23:59.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AppTheoDoiCamera.csproj",
-              "DocumentMoniker": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\AppTheoDoiCamera\\AppTheoDoiCamera.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\AppTheoDoiCamera.csproj",
               "RelativeDocumentMoniker": "AppTheoDoiCamera\\AppTheoDoiCamera.csproj",
-              "ToolTip": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\AppTheoDoiCamera\\AppTheoDoiCamera.csproj",
+              "ToolTip": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\AppTheoDoiCamera.csproj",
               "RelativeToolTip": "AppTheoDoiCamera\\AppTheoDoiCamera.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-25T09:23:18.653Z"
+              "WhenOpened": "2024-10-25T09:23:18.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GhiHinhCamera.resx",
-              "DocumentMoniker": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\AppTheoDoiCamera\\GhiHinhCamera.resx",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.resx",
               "RelativeDocumentMoniker": "AppTheoDoiCamera\\GhiHinhCamera.resx",
-              "ToolTip": "D:\\ProjectGSMBA\\AppTheoDoiCamera\\AppTheoDoiCamera\\GhiHinhCamera.resx",
+              "ToolTip": "C:\\Users\\User\\Documents\\GhiHinhCamera\\AppTheoDoiCamera\\GhiHinhCamera.resx",
               "RelativeToolTip": "AppTheoDoiCamera\\GhiHinhCamera.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-10-23T06:40:48.329Z"
+              "WhenOpened": "2024-10-23T06:40:48.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 46,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

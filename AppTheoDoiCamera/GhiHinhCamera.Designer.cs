@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(31, 12);
+            button1.Location = new Point(31, 11);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -151,7 +151,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "GhiHinhCamera";
             Text = "GhiHinhCamera";
-            Load += Form1_Load;
+            Load += GhiHinhCamera_Load;
             ((System.ComponentModel.ISupportInitialize)pbCam).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -54,22 +54,26 @@ namespace AppTheoDoiCamera
         // Open the selected camera
         private void buttonOpenCamera_Click(object sender, EventArgs e)
         {
+            Debug.WriteLine("Open Camera button clicked.");
+
             if (cbDevices.SelectedItem == null)
             {
                 MessageBox.Show("Vui lòng chọn một thiết bị camera trước.");
+                Debug.WriteLine("No camera device selected.");
                 return;
             }
 
             int deviceIndex = cbDevices.SelectedIndex;
+            Debug.WriteLine($"Selected camera device index: {deviceIndex}");
 
             try
             {
-                // Initialize the video source with the selected camera
+                Debug.WriteLine($"Initializing video source for device: {videoDevices[deviceIndex].MonikerString}");
                 videoSource = new VideoCaptureDevice(videoDevices[deviceIndex].MonikerString);
                 videoSource.NewFrame += new NewFrameEventHandler(Video_NewFrame);
                 videoSource.Start();
 
-                System.Threading.Thread.Sleep(500);
+                System.Threading.Thread.Sleep(500); // Consider removing or replacing this with a more efficient wait
 
                 if (videoSource.IsRunning)
                 {
@@ -80,18 +84,31 @@ namespace AppTheoDoiCamera
                 else
                 {
                     MessageBox.Show("Camera failed to start.");
+                    Debug.WriteLine("Camera did not start successfully.");
                 }
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show("Lỗi: Không có quyền truy cập vào thiết bị camera. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.");
+                Debug.WriteLine($"Camera access error (UnauthorizedAccessException): {ex.Message}");
             }
             catch (ArgumentException ex)
             {
                 MessageBox.Show("Lỗi: Không thể kết nối với thiết bị camera đã chọn. Vui lòng thử lại.");
-                Debug.WriteLine($"Camera connection error: {ex.Message}");
+                Debug.WriteLine($"Camera connection error (ArgumentException): {ex.Message}");
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show("Lỗi: Thiết bị camera đã được sử dụng hoặc không khả dụng.");
+                Debug.WriteLine($"Camera connection error (InvalidOperationException): {ex.Message}");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Đã xảy ra lỗi không xác định khi khởi động camera.");
                 Debug.WriteLine($"Unknown error when starting camera: {ex.Message}");
             }
+
+            Debug.WriteLine("Open Camera button processing completed.");
         }
 
         // Show camera format information
@@ -126,14 +143,25 @@ namespace AppTheoDoiCamera
         // Handle new frame from the camera
         private void Video_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
+            // Ensure the frame is not null
+            if (eventArgs.Frame == null)
+            {
+                Debug.WriteLine("Received a null frame.");
+                return;
+            }
+
             Bitmap frame = eventArgs.Frame;
 
             using (var mat = OpenCvSharp.Extensions.BitmapConverter.ToMat(frame))
             {
+                // Add timestamp to the frame
                 string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 Cv2.PutText(mat, timestamp, new OpenCvSharp.Point(100, 120), HersheyFonts.HersheySimplex, 5.0, new Scalar(0, 255, 0), 5);
+
+                // Resize the frame if needed
                 Cv2.Resize(mat, mat, dsize);
 
+                // Check if we are recording and the video writer is initialized
                 if (isRecording && videoWriter != null)
                 {
                     videoWriter.Write(mat);
@@ -145,13 +173,16 @@ namespace AppTheoDoiCamera
                 {
                     pbCam.Invoke(new Action(() =>
                     {
-                        pbCam.Image?.Dispose();
-                        pbCam.Image = OpenCvSharp.Extensions.BitmapConverter.ToBitmap(mat);
+                        pbCam.Image?.Dispose(); // Dispose the old image if it exists
+                        pbCam.Image = OpenCvSharp.Extensions.BitmapConverter.ToBitmap(mat); // Convert Mat to Bitmap and set it to PictureBox
                     }));
+                }
+                else
+                {
+                    Debug.WriteLine("PictureBox is disposed, cannot update image.");
                 }
             }
         }
-
 
         // Start video recording
         public const string strDefineMode = "MP4_MODE";
@@ -223,35 +254,31 @@ namespace AppTheoDoiCamera
         }
 
         // Stop the camera and release resources when the form closes
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void GhiHinhCamera_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Dừng và giải phóng video source nếu đang chạy
+            // Stop and release video source if running
             if (videoSource != null && videoSource.IsRunning)
             {
                 videoSource.SignalToStop();
                 videoSource.WaitForStop();
-                videoSource = null; // Giải phóng tham chiếu
+                videoSource = null; // Release reference
             }
 
-            // Giải phóng video writer nếu tồn tại
+            // Release video writer if it exists
             videoWriter?.Release();
             videoWriter = null;
 
-            // Giải phóng PictureBox nếu cần
+            // Dispose PictureBox if needed
             pbCam?.Dispose();
             pbCam = null;
 
             Debug.WriteLine("Form đã đóng. Tài nguyên đã được giải phóng.");
-
-            // Thoát ứng dụng
-            Environment.Exit(0);
         }
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
+        // Load event for the form
+        private void GhiHinhCamera_Load(object sender, EventArgs e)
         {
-          
+            Function_ScanCameraIput(); // Populate camera devices on load
         }
     }
 }
